@@ -5,7 +5,7 @@ try:
     with open("measurements.json", "r", encoding="utf-8") as json_file:
         data = json.load(json_file)
 
-    with open("measurements.csv", "w", newline="", encoding="utf-8") as csv_file:
+    with open("measurements1.csv", "w", newline="", encoding="utf-8") as csv_file:
         csv_writer = csv.writer(csv_file)
 
         csv_writer.writerow(["location", "parameter", "value", "unit", "utc_date", "local_date", "latitude", "longitude", "country", "city"])

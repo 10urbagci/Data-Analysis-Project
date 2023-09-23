@@ -4,7 +4,7 @@ import json
 def get_data():
     try:
         #endpoint -> https://api.openaq.org
-        response = requests.get("https://api.openaq.org/v1/measurements?limit=1000")
+        response = requests.get("https://api.openaq.org/v1/measurements?limit=10000")
 
         data = response.json()
         
